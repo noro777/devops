@@ -14,5 +14,5 @@ WORKDIR /var/www/html/
 RUN unzip cycle.zip
 #RUN cp -rvf cycle/* .
 RUN rm -rf cycle cycle.zip
- CMD [ "/usr/sbin/httpd" , "-D" , "FOREGROUND"]
+ CMD ["usr/sbin/httpd" , "-D" , "FOREGROUND"]
  EXPOSE 80 22
