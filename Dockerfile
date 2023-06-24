@@ -1,9 +1,9 @@
 FROM  ubuntu:latest
 
 RUN apt update -y
-RUN apt install -y httpd 
-RUN apt install -y zip
-RUN apt install -y unzip
+RUN apt install httpd -y
+RUN apt install  zip -y
+RUN apt install  unzip -y
 
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page254/photogenic.zip /var/www/html/
 
