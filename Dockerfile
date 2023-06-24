@@ -1,8 +1,8 @@
 FROM  ubuntu:latest
 
 RUN apt update -y
-RUN apt install –y apache2 
-RUN apt install –y apache2-utils 
+RUN apt install apache2 -y
+RUN apt install apache2-utils -y
 RUN apt install  zip -y
 RUN apt install  unzip -y
 
