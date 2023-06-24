@@ -1,7 +1,8 @@
 FROM  ubuntu:latest
 
 RUN apt update -y
-RUN apt install httpd -y
+RUN apt install –y apache2 
+RUN apt install –y apache2-utils 
 RUN apt install  zip -y
 RUN apt install  unzip -y
 
@@ -13,6 +14,6 @@ RUN cp -rvf photogenic/* .
 
 RUN rm -rf photogenic photogenic.zip
 
-CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
+CMD [“apache2ctl”, “-D”, “FOREGROUND”]
 
 EXPOSE 80  
