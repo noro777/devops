@@ -1,7 +1,7 @@
 FROM  centos:latest
 MAINTAINER noro.lavandyan@gmail.com
 
-RUN  yum -y update
+RUN sudo yum -y update
 RUN sudo yum install -y httpd 
 RUN sudo yum install -y zip
 RUN sudo yum install -y unzip
